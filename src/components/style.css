@@ -1,0 +1,99 @@
+/* Body */
+body {
+  background-color: aqua;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.task-list {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Filter buttons */
+.filter-buttons {
+  display: flex;
+  justify-content: center; /* center buttons horizontally */
+  gap: 10px; /* space between buttons */
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  padding: 8px 20px;
+  border: none;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.filter-buttons button:hover {
+  background-color: #ddd;
+}
+
+.filter-buttons .active {
+  background-color: #333;
+  color: #fff;
+  transform: scale(1.05); /* slight enlarge effect */
+}
+
+/* Task item */
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 10px 15px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+/* Checkbox */
+.task-item input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-right: 12px;
+  cursor: pointer;
+}
+
+/* Editable text */
+.task-text {
+  flex: 1;
+  margin: 0 10px;
+  cursor: pointer;
+}
+
+.task-text.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+/* Delete button */
+.delete-btn {
+  background-color: #ff4d4f;
+  color: white;
+  border: none;
+  padding: 5px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.delete-btn:hover {
+  background-color: #ff0000;
+}
+
+/* Input editing */
+.task-edit-input {
+  flex: 1;
+  margin: 0 10px;
+  border: none;
+  border-bottom: 2px solid #333;
+  outline: none;
+  font-size: 16px;
+  padding: 2px 0;
+}
